@@ -1,11 +1,215 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>Your Smart Trash Can</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SmartTrash</title>
+    <link href="https://fonts.googleapis.com/css?family=Hind+Vadodara:400,600,700|Frank+Ruhl+Libre:700" rel="stylesheet">
+    <link rel="stylesheet" href="dist/css/style.css">
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 </head>
+<body class="is-boxed has-animations">
+  <div class="body-wrap boxed-container">
+    <header class="site-header">
+      <div class="container">
+        <div class="site-header-inner">
+          <div class="brand header-brand">
+            <h1 class="m-0">
+              <a href="#">
+                <svg width="44" height="32" viewBox="0 0 44 32" xmlns="http://www.w3.org/2000/svg">
+                  <title>Logo</title>
+                </svg>
+              </a>
+            </h1>
+          </div>
+        </div>
+      </div>
+    </header>
 
-<body>
-  <h1>Your Smart Trash Can</h1>
-  <p>Welcome to Will's Life</p>
+    <main>
+      <section class="hero">
+        <div class="container">
+          <div class="hero-inner">
+						<div class="hero-copy">
+	             <h1 class="hero-title mt-0">Your trash can just got smarter.</h1>
+               </br>
+	             <p class="hero-cta"><a class="button button-primary button-shadow" href="#">Check status</a></p>
+						</div>
+						<div class="hero-illustration">
+							<div class="hero-shapes is-revealing">
+								<svg width="724" height="672" viewBox="0 0 724 672" xmlns="http://www.w3.org/2000/svg">
+								    <defs>
+                      <!-- Blob graphics -->
+								        <linearGradient x1="87.336%" y1="7.447%" x2="66.279%" y2="44.56%" id="hero-shapes-a">
+								            <stop stop-color="#A3A9F1" offset="0%"/>
+								            <stop stop-color="#6A72E4" offset="100%"/>
+								        </linearGradient>
+								        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="hero-shapes-b">
+								            <stop stop-color="#82DDFC" offset="0%"/>
+								            <stop stop-color="#0181F6" offset="100%"/>
+								        </linearGradient>
+								    </defs>
+							        <path d="M675.09 555.602c101.344 0-138.133-250.973-138.133-352.317S664.223.91 562.879.91C461.535.91.543 80.5.543 181.844S573.746 555.602 675.09 555.602z" fill="url(#hero-shapes-a)"/>
+							        <path d="M667.21 644.029c111.82-59.115-15.77-185.344-15.77-321.482 0-136.138-.284-340.372-136.422-321.106C378.88 20.708 433.487 224.707 85.874 306.688c-347.614 81.98 469.517 396.456 581.336 337.34z" transform="matrix(-1 0 0 1 723.483 15)" fill="url(#hero-shapes-b)"/>
+								</svg>
+							</div>
+						<div class="hero-media is-revealing" style="perspective:800px">
+								<svg width="528" height="401" viewBox="0 0 528 401" xmlns="http://www.w3.org/2000/svg">
+									<defs>
+										<filter x="-500%" y="-500%" width="1000%" height="1000%" filterUnits="objectBoundingBox" id="dropshadow-media">
+											<feOffset dy="16" in="SourceAlpha" result="shadowOffsetOuter"/>
+											<feGaussianBlur stdDeviation="24" in="shadowOffsetOuter" result="shadowBlurOuter"/>
+											<feColorMatrix values="0 0 0 0 0.06 0 0 0 0 0.13 0 0 0 0 0.34 0 0 0 0.14 0" in="shadowBlurOuter"/>
+										</filter>
+									</defs>
+									<path fill="#FFF" d="M0 52L528 .832v399.336L0 349z" style="mix-blend-mode:multiply;filter:url(#dropshadow-media)"/>
+								</svg>
+							</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="features-extended section">
+        <div class="container">
+          <div class="features-extended-inner section-inner has-top-divider">
+            <div class="features-extended-header text-center">
+              <div class="container-sm">
+                <h2 class="section-title mt-0">Meet your Smart Trash Can</h2>
+                <p class="section-paragraph">introduction to the smart trash can's features goes here.</p>
+              </div>
+            </div>
+          <div class="feature-extended">
+            <div class="feature-extended-image is-revealing">
+              <svg width="480" height="320" viewBox="0 0 480 320" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <defs>
+                  <path id="features-1-a" d="M13 0h340v240H13z"/></path>
+                </defs>
+                <g fill="#F4F7FE">
+                  <path d="M281.984 251.89c88.366 0 65.883-12.77 65.883-101.136S378.366 0 290 0 .043 62.388.043 150.754c0 88.365 193.576 101.137 281.941 101.137z"/>
+                  <path d="M382.88 319.917c33.137 0 96.563-56.96 96.563-90.098 0-33.137-82.61-7.086-115.746-7.086-33.137 0-27.301-5.2-27.301 27.938 0 33.137 13.347 69.246 46.484 69.246z"/>
+                </g>
+                <g transform="translate(57 40)">
+									<use fill="#FFF" xlink:href="#features-1-a" style="mix-blend-mode:multiply;filter:url(#dropshadow-f-1)"/>
+                  <use fill="#FFF" xlink:href="#features-1-a"/>
+                  <path d="M41.53 58.446C31.926 59.796 22.195 66.22 13 75.888v76.918c8.824-10.661 18.335-18.522 28.53-19.954 43.753-6.15 103.475 17.59 70.166 0-33.308-17.59-26.413-80.555-70.165-74.406z" fill="#FF9083"/>
+                  <path d="M350.002 75.426c-21.168-10.785-64.642 27.763-75.428 48.93-10.785 21.168 39.112-19.155 60.28-8.37 8.496 4.329 14.02 11.38 18.146 16.9V77.136a42.51 42.51 0 0 0-2.998-1.709z" fill="#FFE9E7"/>
+                  <path d="M101.252 71.947l-15.99 3.362-13.844 9.55-16.191-2.896-16.002.685-11.23 16.377-11.617 15.88c.897-.248-.229-.248-3.378 0v4.63c2.796-.056 4.72-.056 5.771 0l13.016-15.299 10.25-16.311 14.61-.043 14.869-2.487 15.086-3.598 14.86-4.954 13.644-6.775 14.439 9.359 14.47 9.994 15.46 6.435 15.691-3.123 14.356-9.018 16.961-4.307-2.498-3.217-14.348 6.003-15.466 4.731-14.526 6.572-14.131-10.298-16.061-7.536L115.623 65l-14.371 6.947z" fill="url(#features-1-b)"/>
+                </g>
+              </svg>
+            </div>
+            <div class="feature-extended-body">
+              <h3 class="mt-0">Trash can feature</h3>
+              <p>In a professional context it often happens that private or corporate clients corder a publication to be made and presented with the actual content.</p>
+            </div>
+          </div>
+          <div class="feature-extended">
+            <div class="feature-extended-image is-revealing">
+              <svg width="480" height="320" viewBox="0 0 480 320" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <defs>
+                  <path id="feature-2-a" d="M0 17h340v240H0z"/>
+                  <path d="M104.361 69c5.222-9.45 8.194-20.1 8.194-31.66 0-36.45-19.827 0-56.278 0C19.827 37.34 0-25.017 0 11.434 0 29.047 2.36 50.913 8.91 69h95.451z" id="feature-2-b"/>
+                  <linearGradient x1="50%" y1="0%" x2="4.666%" y2="38.561%" id="feature-2-c">
+                    <stop stop-color="#FFE4A2" offset="0%"/>
+                    <stop stop-color="#FFC570" offset="100%"/>
+                  </linearGradient>
+                    <path id="feature-2-f" d="M169.569 25.569h80v80h-80z"/>
+										<filter x="-500%" y="-500%" width="1000%" height="1000%" filterUnits="objectBoundingBox" id="dropshadow-f-2">
+											<feOffset dy="16" in="SourceAlpha" result="shadowOffsetOuter"/>
+											<feGaussianBlur stdDeviation="24" in="shadowOffsetOuter" result="shadowBlurOuter"/>
+											<feColorMatrix values="0 0 0 0 0.06 0 0 0 0 0.13 0 0 0 0 0.34 0 0 0 0.14 0" in="shadowBlurOuter"/>
+										</filter>
+                  </defs>
+                  <g fill="none" fill-rule="evenodd">
+                    <path d="M456.32 303.547c88.366 0-106.453-64.428-106.453-152.793C349.867 62.388 380.366 0 292 0S2.043 62.388 2.043 150.754c0 88.365 365.912 152.793 454.277 152.793z" fill="#F4F7FE"/>
+                  <g transform="translate(70 23)">
+                    <use fill="#FFF" xlink:href="#feature-2-a" style="mix-blend-mode:multiply;filter:url(#dropshadow-f-2)"/>
+										<use fill="#FFF" xlink:href="#feature-2-a"/>
+                      <path d="M31.625 123.62c33.137 0 18.98 85.493 18.98 52.356 0-33.137 100.43-91.442 67.293-91.442-20.35 0-77.099-9.132-117.898-8.503v47.317c10.468.547 21.558.272 31.625.272z" fill="#FFE5F1"/>
+                    <g transform="translate(140 189)">
+                      <mask id="feature-2-d" fill="#fff">
+                        <use xlink:href="#feature-2-b"/>
+                      </mask>
+                      <use fill="#FF6DB1" xlink:href="#feature-2-b"/>
+                      <path d="M38 64C2.71 64-26 35.29-26 0S2.71-64 38-64v4C4.916-60-22-33.084-22 0S4.916 60 38 60 98 33.084 98 0h4c0 35.29-28.71 64-64 64zm0-20C13.738 44-6 24.262-6 0s19.738-44 44-44v4C15.944-40-2-22.056-2 0s17.944 40 40 40S78 22.056 78 0h4c0 24.262-19.738 44-44 44zm0-20C24.767 24 14 13.234 14 0s10.767-24 24-24v4c-11.028 0-20 8.972-20 20s8.972 20 20 20 20-8.972 20-20h4c0 13.234-10.767 24-24 24z" fill="url(#feature-2-c)" mask="url(#feature-2-d)"/>
+                    </g>
+                    <g transform="rotate(45 209.569 65.569)">
+                      <use fill="#000" filter="url(#feature-2-e)" xlink:href="#feature-2-f"/>
+                      <use fill="#FFF" xlink:href="#feature-2-f" style="mix-blend-mode:multiply;filter:url(#dropshadow-f-2)"/>
+											<use fill="#FFF" xlink:href="#feature-2-f"/>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+            </div>
+            <div class="feature-extended-body">
+              <h3 class="mt-0">Trash Can Feature</h3>
+              <p>In a professional context it often happens that private or corporate clients corder a publication to be made and presented with the actual content.</p>
+            </div>
+          </div>
+          <div class="feature-extended">
+            <div class="feature-extended-image is-revealing">
+              <svg width="480" height="320" viewBox="0 0 480 320" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <defs>
+                  <path id="features-3-a" d="M0 0h320v240H0z"/>
+									<filter x="-500%" y="-500%" width="1000%" height="1000%" filterUnits="objectBoundingBox" id="dropshadow-f-3">
+										<feOffset dy="16" in="SourceAlpha" result="shadowOffsetOuter"/>
+										<feGaussianBlur stdDeviation="24" in="shadowOffsetOuter" result="shadowBlurOuter"/>
+										<feColorMatrix values="0 0 0 0 0.06 0 0 0 0 0.13 0 0 0 0 0.34 0 0 0 0.14 0" in="shadowBlurOuter"/>
+									</filter>
+                </defs>
+                <g fill="none" fill-rule="evenodd">
+                  <g fill="#F4F7FE">
+                    <path d="M465.727 112.934c33.137 0-5.727-64.359-5.727-97.496s-20.974-2.617-54.111-2.617S340-17.699 340 15.438s92.59 97.496 125.727 97.496zM454.277 319.202c88.366 0-106.453-64.427-106.453-152.793S0 41.866 0 166.409s365.912 152.793 454.277 152.793z"/>
+                  </g>
+                  <g transform="translate(80 40)">
+                    <use fill="#FFF" xlink:href="#features-3-a" style="mix-blend-mode:multiply;filter:url(#dropshadow-f-2)"/>
+									  <use fill="#FFF" xlink:href="#features-3-a"/>
+                  </g>
+                  <path fill="#FFF" d="M216 24h80v80h-80z" style="mix-blend-mode:multiply;filter:url(#dropshadow-f-2)"/>
+								  <path fill="#FFF" d="M216 24h80v80h-80z"/>
+                </g>
+              </svg>
+            </div>
+            <div class="feature-extended-body">
+              <h3 class="mt-0">Trash Can Feature</h3>
+              <p>In a professional context it often happens that private or corporate clients corder a publication to be made and presented with the actual content.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer-inner">
+        <div class="brand footer-brand">
+          <a href="#">
+            <svg width="44" height="32" viewBox="0 0 44 32" xmlns="http://www.w3.org/2000/svg">
+              <title>Logo</title>
+                <defs></defs>
+            </svg>
+          </a>
+        </div>
+        <ul class="footer-links list-reset">
+          <li>
+            <a href="#">Contact</a>
+          </li>
+          <li>
+            <a href="#">About us</a>
+          </li>
+          <li>
+            <a href="#">FAQ's</a>
+          </li>
+        </ul>
+        <ul class="footer-social-links list-reset"></ul>
+        <div class="footer-copyright">&copy; 2018 IEEE QP Team 15, all rights reserved</div>
+      </div>
+    </div>
+  </footer>
+</div>
+<script src="dist/js/main.min.js"></script>
 </body>
-
 </html>
