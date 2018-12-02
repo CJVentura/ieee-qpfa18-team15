@@ -71,7 +71,22 @@ def load_labels(label_file):
     label.append(l.rstrip())
   return label
 
+def printResults(results):
+  top_k = results.argsort()[-5:][::-1]
+  labels = load_labels(label_file)
 
+  index_of_max_value = 0
+  max_value = top_k[index_of_max_value]
+  
+  for i in top_k:
+    print(labels[i], results[i])
+
+    if (results[i] > max_value):
+      max_value = results[i]
+      index_of_max_value = i
+
+  return index_of_max_value
+  
 if __name__ == "__main__":
   file_name = "tensorflow/examples/label_image/data/grace_hopper.jpg"
   model_file = \
@@ -134,7 +149,6 @@ if __name__ == "__main__":
     })
   results = np.squeeze(results)
 
-  top_k = results.argsort()[-5:][::-1]
-  labels = load_labels(label_file)
-  for i in top_k:
-    print(labels[i], results[i])
+  printResults(results)
+  
+  
