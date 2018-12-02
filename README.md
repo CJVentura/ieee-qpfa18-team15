@@ -1,7 +1,8 @@
 ## Smart Trash Can
 
-Description of the smart trash can
+A waste bin that can automatically sort waste into trash, compost, and recyclables based on image processing
 
+/*
 ### Markdown
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
@@ -23,5 +24,6 @@ Syntax highlighted code block
 
 [Link](url) and ![Image](src)
 ```
+*/
 
 For more details visit the [website](https://cjventura.github.io/ieee-qpfa18-team15/).
