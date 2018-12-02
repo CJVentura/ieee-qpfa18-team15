@@ -43,13 +43,13 @@ pwm_servo3 = GPIO.PWM(ServoPin3, pwm_frequency)
 
 # --- End of the PWM setup ---
 recycling = False;
-compost = False;
+compost = True;
 trash = False;
 
-i = 0
+# i = 0
 
 # Initialize the camera
-camera = picamera.PiCamera()
+# camera = picamera.PiCamera()
 
 # Main program 
 if __name__ == '__main__':
@@ -61,19 +61,19 @@ if __name__ == '__main__':
 
             GPIO.output(LedPin, GPIO.HIGH) # LED on
             
-            camera.start_preview()
-            time.sleep(5)
-            camera.capture('/home/pi/ieee-qfpa18-team15/TensorFlow/images/waste%s.jpg' % i)
-            camera.stop_preview()
-            camera.close()
+            # camera.start_preview()
+            # time.sleep(5)
+            # camera.capture('/home/pi/ieee-qfpa18-team15/TensorFlow/images/waste%s.jpg' % i)
+            # camera.stop_preview()
+            # camera.close()
             
-            index_of_category = os.system('python3 label_image.py --graph=~/tmp/output_graph.pb --labels=~/tmp/output_labels.txt --input_layer=Placeholder --output_layer=final_result --image=/images/waste%s.jpg' % i)
+            # index_of_category = os.system('python3 label_image.py --graph=~/tmp/output_graph.pb --labels=~/tmp/output_labels.txt --input_layer=Placeholder --output_layer=final_result --image=/images/waste%s.jpg' % i)
 
-            i++
+            # i++
 
-            recycling = index_of_category == 1
-            compost = index_of_category == 0
-            trash = index_of_category == 2
+            # recycling = index_of_category == 1
+            # compost = index_of_category == 0
+            # trash = index_of_category == 2
 
             if (recycling):
                 angle = 0
